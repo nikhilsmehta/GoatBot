@@ -10,6 +10,11 @@ import java.awt.*;
 
 import static com.nikhilsmehta.discord6th.TutorialBot.jda;
 
+/**
+ * @status Class For Testing stuff
+ *
+ * */
+
 public class testrole extends ListenerAdapter {
 
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {

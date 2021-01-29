@@ -5,6 +5,11 @@ import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+/**
+ * @status File is active and Edited when new commands are added
+ *
+ * */
+
 public class help extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
@@ -44,7 +49,7 @@ public class help extends ListenerAdapter {
             info.addField("?wtf to see ayo wtf", "", false);
             info.addField("?osas to view osas", "", false);
             info.addField("?pain to see stephen a smith", "", false);
-            info.addField("?coding to see akhil coding", "", false);
+            info.addField("?code to see akhil coding", "", false);
             info.addField("?bruh to see bruh", " ", false);
             info.addField("?sus to see sus", " ", false);
             info.addField("?howie to see howie", " ", false);

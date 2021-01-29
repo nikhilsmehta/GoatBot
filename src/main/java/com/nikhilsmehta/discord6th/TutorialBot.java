@@ -14,6 +14,14 @@ import java.awt.*;
 
 import javax.security.auth.login.LoginException;
 
+/**
+ * @status In progress
+ * @author Nikhil
+ * class is always being updated when new commands are made
+ *
+ * */
+
+
 public class TutorialBot {
     public static JDABuilder builder;
 
@@ -47,37 +55,17 @@ public class TutorialBot {
         jda.addEventListener(new SourceCode());
         jda.addEventListener(new Headlines());
         jda.addEventListener(new Muted());
-//        jda.addEventListener(new testrole());
         jda.addEventListener(new unmute());
-//        jda.addEventListener(new Ban());
         jda.addEventListener(new Sus());
         jda.addEventListener(new UserJoin());
-        /*jda.addEventListener(new RandMemes());*/
         jda.addEventListener(new RandomMemesAPI());
         jda.addEventListener(new Newsspi());
         jda.addEventListener(new Howie());
 
+        /*Below are still in progress*/
+        //        jda.addEventListener(new Ban());
+        //        jda.addEventListener(new testrole());
 
-
-        /*String token="Nzk5MDI0MjQ3MzAxMzQxMjU0.X_9jUQ.WM_VbYz-AGQP_iRiVCoOUXC8lmQ";
-
-        builder = JDABuilder.createDefault(token);
-
-        builder.disableCache(CacheFlag.MEMBER_OVERRIDES, CacheFlag.VOICE_STATE);
-
-        builder.setBulkDeleteSplittingEnabled(false);
-
-        builder.setCompression(Compression.NONE);
-
-        builder.setActivity(Activity.playing("Discord"));
-
-        builder.enableIntents(GatewayIntent.GUILD_MEMBERS);
-
-        builder.build();
-
-        builder.addEventListeners(new HelloEvent());
-
-*/
     }
 
 }

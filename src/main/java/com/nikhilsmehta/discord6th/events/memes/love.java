@@ -7,6 +7,11 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 import java.io.File;
 
+/**
+ * @status Completed
+ *
+ * */
+
 public class love extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");

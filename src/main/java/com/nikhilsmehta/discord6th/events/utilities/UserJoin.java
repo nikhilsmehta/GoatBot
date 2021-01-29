@@ -1,16 +1,14 @@
 package com.nikhilsmehta.discord6th.events.utilities;
 
-import com.nikhilsmehta.discord6th.TutorialBot;
-import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.TextChannel;
-import net.dv8tion.jda.api.entities.User;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
-import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import net.dv8tion.jda.api.events.guild.GuildJoinEvent;
-
-import java.awt.*;
 import java.util.List;
+
+/**
+ * @status Completed
+ *
+ * */
 
 public class UserJoin extends ListenerAdapter {
 

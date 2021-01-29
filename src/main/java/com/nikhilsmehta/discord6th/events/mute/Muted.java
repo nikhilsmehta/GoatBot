@@ -19,6 +19,11 @@ import java.util.List;
 
 import static com.nikhilsmehta.discord6th.TutorialBot.jda;
 
+/**
+ * @status Completed
+ *
+ * */
+
 public class Muted extends ListenerAdapter {
 
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) throws IndexOutOfBoundsException{

@@ -13,6 +13,11 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import java.util.Arrays;
 import java.util.Random;
 
+/**
+ * @status NOT IN USE
+ *
+ * */
+
 /*
 public class RandMemes extends ListenerAdapter {
 
