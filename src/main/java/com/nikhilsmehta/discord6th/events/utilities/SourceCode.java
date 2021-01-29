@@ -13,7 +13,7 @@ public class SourceCode extends ListenerAdapter {
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "sourcecode")) {
             EmbedBuilder info = new EmbedBuilder();
             info.setTitle(":man_technologist_tone5: Source Code!");
-            info.setDescription("DM @nikhil for access to the source code!");
+            info.setDescription("https://github.com/nikhilsmehta/GoatBot");
             info.setColor(TutorialBot.embedColor);
             info.setFooter("GoatBot created by Nikhil using the Discord API", TutorialBot.jda.getSelfUser().getAvatarUrl());
 

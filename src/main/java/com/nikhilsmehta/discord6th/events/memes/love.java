@@ -12,9 +12,9 @@ public class love extends ListenerAdapter {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "love")) {
-            File f = new File("nikarnav.png");
             MessageBuilder e =new MessageBuilder();
-            e.setContent("https://media.discordapp.net/attachments/779048271653109801/799053539552002068/2020-09-24.png");
+            String love = System.getenv("love");
+            e.setContent(love);
 
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(e.build()).queue();
