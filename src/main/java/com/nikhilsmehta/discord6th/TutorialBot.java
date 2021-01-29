@@ -1,8 +1,9 @@
 package com.nikhilsmehta.discord6th;
 
 import com.nikhilsmehta.discord6th.events.memes.*;
-import com.nikhilsmehta.discord6th.events.mute.Muted;
-import com.nikhilsmehta.discord6th.events.mute.unmute;
+import com.nikhilsmehta.discord6th.events.moderation.Ban;
+import com.nikhilsmehta.discord6th.events.moderation.Muted;
+import com.nikhilsmehta.discord6th.events.moderation.unmute;
 import com.nikhilsmehta.discord6th.events.utilities.*;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
@@ -30,7 +31,7 @@ public class TutorialBot {
     public static final Color embedColor = new Color(114, 229, 14);
 
     public static void main(String[] args) throws LoginException {
-// test
+
         String token = System.getenv("token");
 
         jda = new JDABuilder(AccountType.BOT).setToken(token).build();
@@ -61,10 +62,7 @@ public class TutorialBot {
         jda.addEventListener(new RandomMemesAPI());
         jda.addEventListener(new Newsspi());
         jda.addEventListener(new Howie());
-
-        /*Below are still in progress*/
-        //        jda.addEventListener(new Ban());
-        //        jda.addEventListener(new testrole());
+        jda.addEventListener(new Ban());
 
     }
 
