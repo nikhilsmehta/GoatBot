@@ -12,7 +12,8 @@ public class Howie extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "howie")) {
             MessageBuilder e =new MessageBuilder();
-            e.setContent("https://media.discordapp.net/attachments/779048271653109801/804192332899024956/unknown.png");
+            String howie = System.getenv("howie");
+            e.setContent(howie);
 
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(e.build()).queue();
