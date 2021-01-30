@@ -20,12 +20,11 @@ To use Goatbot follow the below steps:
 ## Usage
 
 1. To run this bot, open [TutorialBot.java](https://github.com/nikhilsmehta/GoatBot/blob/main/src/main/java/com/nikhilsmehta/discord6th/TutorialBot.java). Keep in mind that for the token, it uses environmental variables.
-
-Visit the [help.java](https://github.com/nikhilsmehta/GoatBot/blob/main/src/main/java/com/nikhilsmehta/discord6th/events/utilities/help.java) file for help on all of the commands.
+2. Visit the [help.java](https://github.com/nikhilsmehta/GoatBot/blob/main/src/main/java/com/nikhilsmehta/discord6th/events/utilities/help.java) file for help on all of the commands.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
-See more about the license in the [License.txt](https://github.com/nikhilsmehta/GoatBot/blob/main/LICENSE.txt) file
+* [MIT](https://choosealicense.com/licenses/mit/)
+* See more about the license in the [License.txt](https://github.com/nikhilsmehta/GoatBot/blob/main/LICENSE.txt) file
