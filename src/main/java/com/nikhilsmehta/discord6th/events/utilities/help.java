@@ -35,7 +35,8 @@ public class help extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "helpmemes")) {
             EmbedBuilder info = new EmbedBuilder();
-            info.setTitle(":rofl: Meme Commands");
+            info.setTitle(":rofl: Meme Commands").setThumbnail("https://i.pinimg.com/originals/7b/3e/ee/7b3eeeafffcbc7669f9dd76404285117.jpg");
+
 
             info.addField("?meme is a randomly generated meme", " ", false);
             info.addField("?love to see arnav and nikhil loving each other", " ", false);
@@ -66,7 +67,7 @@ public class help extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "helpsports")) {
             EmbedBuilder info = new EmbedBuilder();
-            info.setTitle(":medal: Sports Commands");
+            info.setTitle(":medal: Sports Commands").setThumbnail("https://i.pinimg.com/originals/7b/3e/ee/7b3eeeafffcbc7669f9dd76404285117.jpg");
 
             info.addField("?nflhead to view nfl headlines :football:", " ", false);
             info.addField("?nbahead to view nba headlines :basketball:", "", false);
@@ -81,7 +82,7 @@ public class help extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "helputil")) {
             EmbedBuilder info = new EmbedBuilder();
-            info.setTitle("Utility Commands");
+            info.setTitle("Utility Commands").setThumbnail("https://i.pinimg.com/originals/7b/3e/ee/7b3eeeafffcbc7669f9dd76404285117.jpg");
 
             info.addField("?maker to view the maker of this awesome bot", " ", false);
             info.addField("?user to view user info about yourself", "", false);
