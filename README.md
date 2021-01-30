@@ -1,4 +1,4 @@
-# GoatBot
+# GoatBot :goat:
 
 GoatBot is a discord bot which offers a combination of memes as well as moderation commands. Some features are:
 * Banning and Muting Commands
