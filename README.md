@@ -50,6 +50,7 @@ GoatBot/
 │   ├─ ?bruh
 │   ├─ ?sus
 │   ├─ ?howie
+│   ├─ ?boi
 ├─ Utilities/
 │   ├─ ?maker
 │   ├─ ?user
