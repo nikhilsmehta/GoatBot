@@ -22,7 +22,9 @@ public class Newsspi extends ListenerAdapter {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "sportnews")) {
 
-            NewsApi newsApi = new NewsApi("57c30eb43aba4db6910910ecb8875f64");
+            String newsKey = System.getenv("newsAPIKey");
+
+            NewsApi newsApi = new NewsApi(newsKey);
             RequestBuilder usNewsRequest = new RequestBuilder()
                     .setCategory("sport")
                     .setLanguage("en");
