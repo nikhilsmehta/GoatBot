@@ -19,6 +19,7 @@ To use Goatbot follow the below steps:
 ## Usage
 
 Visit the [help.java](https://github.com/nikhilsmehta/GoatBot/blob/main/src/main/java/com/nikhilsmehta/discord6th/events/utilities/help.java) file for help on all of the commands.
+This bot uses Java 8, however you can change that to suit your needs in the [pom.xml](https://github.com/nikhilsmehta/GoatBot/blob/main/pom.xml) file
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
