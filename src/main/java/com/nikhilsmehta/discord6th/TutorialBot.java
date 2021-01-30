@@ -62,7 +62,7 @@ public class TutorialBot {
         jda.addEventListener(new Newsspi());
         jda.addEventListener(new Howie());
         jda.addEventListener(new Ban());
-
+        jda.addEventListener(new Boi());
     }
 
 }
