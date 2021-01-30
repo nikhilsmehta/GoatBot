@@ -12,13 +12,13 @@ GoatBot is a discord bot which offers a combination of memes as well as moderati
 
 To use Goatbot follow the below steps:
 1. Clone this repository
-2. Open and run it, the main class is TutorialBot.java
+2. Open and run it, the main class is [TutorialBot.java](https://github.com/nikhilsmehta/GoatBot/blob/main/src/main/java/com/nikhilsmehta/discord6th/TutorialBot.java)
 3. If you want to host it on a sevrer, adjust the Maven dependencies in the pom.xml file and also adjust Procfile as needed
 4. I have it set up so that it uses environmental variables for the bot token and some other images, so i suggest you comment those commands out or add environmental variables of your own. Keep in mind that you will need the bot token in order for this to run. 
 
 ## Usage
 
-Visit the help.java file for help on all of the commands.
+Visit the [help.java](https://github.com/nikhilsmehta/GoatBot/blob/main/src/main/java/com/nikhilsmehta/discord6th/events/utilities/help.java) file for help on all of the commands.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
