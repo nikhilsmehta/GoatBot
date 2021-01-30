@@ -20,7 +20,6 @@ public class help extends ListenerAdapter {
 
             info.addField("?help to get to this page", " ", false);
             info.addField("?helpmemes to view meme commands", " ", false);
-            info.addField("?helpsports to view sports", " ", false);
             info.addField("?helputil to view utility commands", " ", false);
 
             info.setColor(TutorialBot.embedColor);
@@ -65,20 +64,6 @@ public class help extends ListenerAdapter {
             info.clear();
         }
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "helpsports")) {
-            EmbedBuilder info = new EmbedBuilder();
-            info.setTitle(":medal: Sports Commands").setThumbnail("https://i.pinimg.com/originals/7b/3e/ee/7b3eeeafffcbc7669f9dd76404285117.jpg");
-
-            info.addField("?nflhead to view nfl headlines :football:", " ", false);
-            info.addField("?nbahead to view nba headlines :basketball:", "", false);
-
-            info.setColor(TutorialBot.embedColor);
-            info.setFooter("Created by nikhil");
-
-            event.getChannel().sendTyping().queue();
-            event.getChannel().sendMessage(info.build()).queue();
-            info.clear();
-        }
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "helputil")) {
             EmbedBuilder info = new EmbedBuilder();

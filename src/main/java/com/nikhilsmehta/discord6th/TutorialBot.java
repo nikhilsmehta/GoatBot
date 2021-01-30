@@ -54,7 +54,6 @@ public class TutorialBot {
         jda.addEventListener(new Coding());
         jda.addEventListener(new Bruh());
         jda.addEventListener(new SourceCode());
-        jda.addEventListener(new Headlines());
         jda.addEventListener(new Muted());
         jda.addEventListener(new unmute());
         jda.addEventListener(new Sus());
