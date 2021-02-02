@@ -53,6 +53,7 @@ public class help extends ListenerAdapter {
             info.addField("?bruh to see bruh", " ", false);
             info.addField("?sus to see sus", " ", false);
             info.addField("?howie to see howie", " ", false);
+            info.addField("?boi to see harden", " ", false);
 
 
 
