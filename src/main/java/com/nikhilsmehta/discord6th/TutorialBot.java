@@ -1,10 +1,7 @@
 package com.nikhilsmehta.discord6th;
 
 import com.nikhilsmehta.discord6th.events.memes.*;
-import com.nikhilsmehta.discord6th.events.moderation.Ban;
-import com.nikhilsmehta.discord6th.events.moderation.Kick;
-import com.nikhilsmehta.discord6th.events.moderation.Muted;
-import com.nikhilsmehta.discord6th.events.moderation.unmute;
+import com.nikhilsmehta.discord6th.events.moderation.*;
 import com.nikhilsmehta.discord6th.events.utilities.*;
 import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
@@ -65,6 +62,7 @@ public class TutorialBot {
         jda.addEventListener(new Ban());
         jda.addEventListener(new Boi());
         jda.addEventListener(new Kick());
+        jda.addEventListener(new SendInvite());
     }
 
 }
