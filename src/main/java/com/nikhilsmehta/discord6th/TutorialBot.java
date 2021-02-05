@@ -63,6 +63,7 @@ public class TutorialBot {
         jda.addEventListener(new Boi());
         jda.addEventListener(new Kick());
         jda.addEventListener(new SendInvite());
+        jda.addEventListener(new Lowry());
     }
 
 }
