@@ -27,6 +27,7 @@ To use Goatbot follow the below steps:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
+* This bot is created by Nikhil Mehta. 
 * [MIT](https://choosealicense.com/licenses/mit/)
 * See more about the license in the [License.txt](https://github.com/nikhilsmehta/GoatBot/blob/main/LICENSE.txt) file
 
