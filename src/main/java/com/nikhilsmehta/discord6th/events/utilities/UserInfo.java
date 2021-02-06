@@ -30,7 +30,7 @@ public class UserInfo extends ListenerAdapter {
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "user")) {
 
             if (event.getMessage().getMentionedMembers().size()==0){
-                info.setTitle(event.getMessage().getAuthor().getName()+"'s Info! :man_bowing:");
+                info.setTitle(event.getMessage().getAuthor().getName()+"'s Info!");
 
                 info.setDescription (event.getMember().getAsMention()+" has been a member of discord since "
                         +event.getAuthor().getTimeCreated().getDayOfMonth()+" "
@@ -49,7 +49,7 @@ public class UserInfo extends ListenerAdapter {
                 User target = event.getMessage().getMentionedUsers().get(0);
                 Member memb = event.getMessage().getMentionedMembers().get(0);
 
-                info.setTitle(target.getAsMention()+"'s Info! :man_bowing:");
+                info.setTitle(memb.getAsMention()+"'s Info!");
 
                 info.setDescription (target.getAsMention()+" has been a member of discord since "
                         +target.getTimeCreated().getDayOfMonth()+" "
