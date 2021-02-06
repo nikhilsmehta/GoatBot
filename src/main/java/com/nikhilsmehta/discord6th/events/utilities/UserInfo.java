@@ -49,7 +49,7 @@ public class UserInfo extends ListenerAdapter {
                 User target = event.getMessage().getMentionedUsers().get(0);
                 Member memb = event.getMessage().getMentionedMembers().get(0);
 
-                info.setTitle(memb.getAsMention()+"'s Info!");
+                info.setTitle(memb.getNickname()+"'s Info!");
 
                 info.setDescription (target.getAsMention()+" has been a member of discord since "
                         +target.getTimeCreated().getDayOfMonth()+" "
