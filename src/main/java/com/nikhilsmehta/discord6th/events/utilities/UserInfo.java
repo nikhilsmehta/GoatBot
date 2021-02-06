@@ -30,7 +30,7 @@ public class UserInfo extends ListenerAdapter {
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "user")) {
 
             if (event.getMessage().getMentionedMembers().size()==0){
-                info.setTitle(event.getMessage().getAuthor().getName()+" "+ event.getAuthor().getDiscriminator()+" Info!");
+                info.setTitle(event.getAuthor().getAsTag()+" #"+ event.getAuthor().getDiscriminator()+" Info!");
 
                 info.setDescription (event.getMember().getAsMention()+" has been a member of discord since "
                         +event.getAuthor().getTimeCreated().getDayOfMonth()+" "
