@@ -26,6 +26,7 @@ public class Newsspi extends ListenerAdapter {
 
             NewsApi newsApi = new NewsApi(newsKey);
             RequestBuilder usNewsRequest = new RequestBuilder()
+                    .setCountry("us")
                     .setCategory("sport")
                     .setLanguage("en");
 
@@ -55,7 +56,9 @@ public class Newsspi extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "usnews")) {
 
-            NewsApi newsApi = new NewsApi("57c30eb43aba4db6910910ecb8875f64");
+            String newsKey = System.getenv("newsAPIKey");
+
+            NewsApi newsApi = new NewsApi(newsKey);
             RequestBuilder usNewsRequest = new RequestBuilder()
                     .setCategory("general")
                     .setCountry("us")
@@ -83,7 +86,42 @@ public class Newsspi extends ListenerAdapter {
             m.clear();
 
         }
+
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "technews")) {
+
+            String newsKey = System.getenv("newsAPIKey");
+
+            NewsApi newsApi = new NewsApi(newsKey);
+            RequestBuilder usNewsRequest = new RequestBuilder()
+                    .setCategory("technology")
+                    .setCountry("us")
+                    .setLanguage("en");
+
+
+            ApiArticlesResponse apiArticlesResponse = newsApi.sendTopRequest(usNewsRequest);
+            String responseStatus = apiArticlesResponse.status();
+            ArrayList<Article> newsArticles = apiArticlesResponse.articles();
+            Article firstArticle = newsArticles.get(0);
+            String firstArticleTitle = firstArticle.title();
+            String firstArticleDescription = firstArticle.description();
+
+            Article secondArticle = newsArticles.get(2);
+            String secondArticleTitle = firstArticle.title();
+            String secondArticleDescription = firstArticle.description();
+
+            EmbedBuilder m = new EmbedBuilder();
+            m.setColor(TutorialBot.embedColor);
+            m.setTitle(firstArticleTitle);
+            m.setDescription(firstArticleDescription);
+            m.setFooter("Data fetched by newsapi.org. GoatBot is created by Nikhil Mehta");
+            event.getChannel().sendTyping().queue();
+            event.getChannel().sendMessage(m.build()).queue();
+            m.clear();
+
+        }
+
     }
+
 
 
 
