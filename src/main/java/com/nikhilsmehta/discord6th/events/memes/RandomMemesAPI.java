@@ -25,7 +25,7 @@ public class RandomMemesAPI extends ListenerAdapter {
 
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
-
+//test
         JSONParser parser = new JSONParser();
         String url = "";
 
