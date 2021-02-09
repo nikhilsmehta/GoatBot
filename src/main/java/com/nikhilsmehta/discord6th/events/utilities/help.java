@@ -77,6 +77,7 @@ public class help extends ListenerAdapter {
             info.addField("?unmute to unmute people. this is a moderator only command!", "", false);
             info.addField("?sportnews to catch up on the most recent sport's news", " ", false);
             info.addField("?usnews to catch up on the most recent US news", " ", false);
+            info.addField("?technews to catch up on the most recent tech news", " ", false);
             info.addField("?invite to send the invit link", " ", false);
 
             info.setColor(TutorialBot.embedColor);
