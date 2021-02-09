@@ -64,6 +64,7 @@ public class TutorialBot {
         jda.addEventListener(new Kick());
         jda.addEventListener(new SendInvite());
         jda.addEventListener(new Lowry());
+        jda.addEventListener(new Weather());
     }
 
 }
