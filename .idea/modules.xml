@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Discord6th.iml" filepath="$PROJECT_DIR$/Discord6th.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GoatBot.iml" filepath="$PROJECT_DIR$/GoatBot.iml" />
     </modules>
   </component>
 </project>
