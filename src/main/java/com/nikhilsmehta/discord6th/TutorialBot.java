@@ -35,7 +35,7 @@ public class TutorialBot {
         jda = new JDABuilder(AccountType.BOT).setToken(token).build();
 
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
-        jda.getPresence().setActivity(Activity.watching("I am not a Robot!"));
+        jda.getPresence().setActivity(Activity.watching("Nikhil is a Goat"));
         jda.addEventListener(new Maker());
         jda.addEventListener(new love());
         jda.addEventListener(new osas());
