@@ -12,7 +12,7 @@ public class Aiden extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "aiden")) {
             MessageBuilder e =new MessageBuilder();
-            e.setContent("https://cdn.discordapp.com/emojis/809817936495640587.png?v=1");
+            e.setContent("https://cdn.discordapp.com/emojis/797172070914981928.png?v=1");
 
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(e.build()).queue();
