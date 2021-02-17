@@ -12,8 +12,18 @@ public class star extends ListenerAdapter {
     public void onGuildMessageReactionAdd(GuildMessageReactionAddEvent event) {
 
         if (event.getReaction().getReactionEmote().getName().equals("⭐")) {
+            event.getReaction().getChannel().retrieveMessageById(event.getMessageId()).queue(message -> {
+                String msg = message.getContentDisplay();
+                String writer = message.getAuthor().getAsMention();
+                String channel = message.getChannel().getName();
+                MessageBuilder m = new MessageBuilder();
 
-            event.getReaction().getChannel().pinMessageById(event.getMessageId()).queue();
+                m.setContent("Writer: " +writer+"\n"+"Channel: "+channel+"\n"+"Message: "+msg);
+                event.getGuild().getTextChannelById("811657756268036136").sendTyping().queue();
+                event.getGuild().getTextChannelById("811657756268036136").sendMessage(m.build()).queue();
+                m.clear();
+            });
+
         }
     }
 
