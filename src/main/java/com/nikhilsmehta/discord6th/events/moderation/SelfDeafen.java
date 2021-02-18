@@ -22,17 +22,21 @@ public class SelfDeafen extends ListenerAdapter {
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "selfdeafen")) {
 
             String target = event.getAuthor().getId();
-            Role role = event.getGuild().getRoleById("811751764856537098");
+            Role role = event.getGuild().getRoleById("811751764856537098"); //811751764856537098
             event.getGuild().addRoleToMember(target, role).queue();
             String mins = args[1];
             long minsLong = Long.parseLong(mins)*60000;
             long startTime = System.currentTimeMillis();
-            try {
-                Thread.sleep(minsLong);
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-            event.getGuild().removeRoleFromMember(target, role).queue();
+            TimerTask task = new TimerTask() {
+                public void run() {
+                    event.getGuild().removeRoleFromMember(target, role).queue();
+                }
+            };
+            Timer timer = new Timer("Timer");
+
+            long delay = 1000L;
+            timer.schedule(task, minsLong);
+
         }
 
     }
