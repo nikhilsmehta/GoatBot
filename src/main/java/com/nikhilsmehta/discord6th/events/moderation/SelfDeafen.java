@@ -22,7 +22,7 @@ public class SelfDeafen extends ListenerAdapter {
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "selfdeafen")) {
 
             String target = event.getAuthor().getId();
-            Role role = event.getGuild().getRoleById("811765877032615976");
+            Role role = event.getGuild().getRoleById("811751764856537098");
             event.getGuild().addRoleToMember(target, role).queue();
             String mins = args[1];
             long minsLong = Long.parseLong(mins)*60000;
