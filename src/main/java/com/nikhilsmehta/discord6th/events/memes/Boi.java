@@ -10,7 +10,7 @@ public class Boi extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "boi")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "boi")&& !event.getAuthor().getId().equals("668500674215936010")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://tenor.com/view/james-harden-bye-houston-rockets-im-out-eye-roll-gif-11670856");
 

@@ -15,7 +15,7 @@ public class Bruh extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "bruh")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "bruh")&& !event.getAuthor().getId().equals("668500674215936010")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://tenor.com/view/blank-stare-really-i-dont-believe-you-side-eye-looking-gif-6151149");
 

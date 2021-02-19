@@ -14,7 +14,7 @@ public class osas extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "osas")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "osas")&& !event.getAuthor().getId().equals("668500674215936010")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://media.discordapp.net/attachments/698281158663733311/771914826804232192/unknown.png");
 
