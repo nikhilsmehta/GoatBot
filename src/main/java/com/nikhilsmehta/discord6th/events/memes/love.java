@@ -16,7 +16,7 @@ public class love extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "love")&& !event.getAuthor().getId().equals("668500674215936010")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "love")) {
             MessageBuilder e =new MessageBuilder();
             String love = System.getenv("love");
             e.setContent(love);

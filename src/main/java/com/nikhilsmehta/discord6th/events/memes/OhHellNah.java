@@ -14,7 +14,7 @@ public class OhHellNah extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "nah")&& !event.getAuthor().getId().equals("668500674215936010")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "nah")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://www.youtube.com/watch?v=cUlPZN5ZzU4&ab_channel=SathButtons");
 

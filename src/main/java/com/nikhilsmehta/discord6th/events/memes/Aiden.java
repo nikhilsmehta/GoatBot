@@ -10,7 +10,7 @@ public class Aiden extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "aiden")&& !event.getAuthor().getId().equals("668500674215936010")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "aiden")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://cdn.discordapp.com/emojis/797172070914981928.png?v=1");
 

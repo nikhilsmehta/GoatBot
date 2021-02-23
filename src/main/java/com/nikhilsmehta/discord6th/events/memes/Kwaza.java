@@ -14,7 +14,7 @@ public class Kwaza  extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "kwaza")&& !event.getAuthor().getId().equals("668500674215936010")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "kwaza")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://www.youtube.com/watch?v=w6MWa4rZxJY");
             e.append(" ");

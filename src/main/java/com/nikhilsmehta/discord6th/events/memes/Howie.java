@@ -15,7 +15,7 @@ public class Howie extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "howie")&& !event.getAuthor().getId().equals("668500674215936010")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "howie")) {
             MessageBuilder e =new MessageBuilder();
             String howie = System.getenv("howie");
             e.setContent(howie);

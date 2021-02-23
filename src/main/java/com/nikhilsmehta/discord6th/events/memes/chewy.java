@@ -14,7 +14,7 @@ public class chewy extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "chewy")&& !event.getAuthor().getId().equals("668500674215936010")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "chewy")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://tenor.com/view/chewbacca-starwars-wookie-relax-chill-gif-5537770");
 

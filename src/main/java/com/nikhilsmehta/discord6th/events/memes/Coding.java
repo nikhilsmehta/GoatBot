@@ -15,7 +15,7 @@ public class Coding extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "code")&& !event.getAuthor().getId().equals("668500674215936010")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "code")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://cdn.discordapp.com/attachments/779048271653109801/799680602962002021/Screen_Shot_2021-01-13_at_10.png");
 
