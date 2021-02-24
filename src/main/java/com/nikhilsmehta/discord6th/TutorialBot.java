@@ -33,9 +33,9 @@ public class TutorialBot {
         String token = System.getenv("token");
 
         jda = new JDABuilder(AccountType.BOT).setToken(token).build();
-
+        int placeholder = jda.getGuilds().size();
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
-        jda.getPresence().setActivity(Activity.watching("Nikhil is a Goat"));
+        jda.getPresence().setActivity(Activity.playing("?help"));
         jda.addEventListener(new Maker());
         jda.addEventListener(new love());
         jda.addEventListener(new osas());
