@@ -73,6 +73,7 @@ public class Muted extends ListenerAdapter {
         builder.addField("Muter", muter.getAsMention(), false);
         builder.addField("Date", sdf.format(date), false);
         builder.addField("Time", stf.format(date), false);
+        builder.addField("Reason", reason, false);
         channel.sendMessage(builder.build()).queue();
 
     }

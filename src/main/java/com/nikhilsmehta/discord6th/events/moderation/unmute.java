@@ -71,6 +71,7 @@ public class unmute extends ListenerAdapter {
         builder.addField("Unmuter", muter.getAsMention(), false);
         builder.addField("Date", sdf.format(date), false);
         builder.addField("Time", stf.format(date), false);
+        builder.addField("Reason", reason, false);
         channel.sendMessage(builder.build()).queue();
 
     }
