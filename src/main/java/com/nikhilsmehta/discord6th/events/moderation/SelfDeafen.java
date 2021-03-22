@@ -17,7 +17,7 @@ import java.util.TimerTask;
 
 public class SelfDeafen extends ListenerAdapter {
 
-    public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
+    /*public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "selfdeafen")) {
@@ -43,6 +43,6 @@ public class SelfDeafen extends ListenerAdapter {
 
         }
 
-    }
+    }*/
 
 }
