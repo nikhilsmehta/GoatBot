@@ -70,6 +70,7 @@ public class TutorialBot {
         jda.addEventListener(new undeafan());
         jda.addEventListener(new Yea());
         jda.addEventListener(new Thirst());
+        jda.addEventListener(new Ping());
     }
 
 }
