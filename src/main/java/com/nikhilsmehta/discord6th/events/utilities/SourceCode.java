@@ -21,7 +21,6 @@ public class SourceCode extends ListenerAdapter {
             info.setDescription("https://github.com/nikhilsmehta/GoatBot");
             info.setColor(TutorialBot.embedColor);
             info.setFooter("GoatBot created by Nikhil using the Discord API", TutorialBot.jda.getSelfUser().getAvatarUrl());
-
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(info.build()).queue();
             info.clear();
