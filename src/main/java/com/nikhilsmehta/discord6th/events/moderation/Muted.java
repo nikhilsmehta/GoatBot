@@ -47,8 +47,7 @@ public class Muted extends ListenerAdapter {
 
             }
             else {
-                MessageBuilder m = new MessageBuilder();
-                m.setContent("You don't have perms for that!");
+                senErrorMessage(event.getChannel(), event.getMember());
             }
         }
     }
@@ -58,7 +57,7 @@ public class Muted extends ListenerAdapter {
         builder.setTitle("Invalid Usage!");
         builder.setAuthor(member.getUser().getName(), member.getUser().getAvatarUrl(), member.getUser().getAvatarUrl());
         builder.setColor(TutorialBot.embedColor);
-        builder.setDescription("Proper usage: ?mute {@user} [reason]");
+        builder.setDescription("Proper usage: ?mute {@user} [reason]. Also make sure you have perms for that!");
         channel.sendMessage(builder.build()).queue();
     }
 
