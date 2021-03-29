@@ -30,6 +30,10 @@ public class RequestResponse extends ListenerAdapter {
                     .flatMap(channel -> channel.sendMessage(updated3))
                     .queue();
 
+            User nikhil = event.getJDA().getUserById("745127340581060619");
+            nikhil.openPrivateChannel()
+                    .flatMap(channel -> channel.sendMessage("Message sent!"))
+                    .queue();
         }
     }
 
