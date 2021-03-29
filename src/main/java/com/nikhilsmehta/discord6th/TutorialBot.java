@@ -72,6 +72,7 @@ public class TutorialBot {
         jda.addEventListener(new Thirst());
         jda.addEventListener(new Ping());
         jda.addEventListener(new Suggestion());
+        jda.addEventListener(new RequestResponse());
     }
 
 }
