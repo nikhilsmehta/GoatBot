@@ -20,6 +20,7 @@ public class Suggestion extends ListenerAdapter {
             e.setTitle("New Suggestion");
             e.appendDescription("From: "+event.getAuthor().getAsTag());
             e.appendDescription(" Command: "+yeet);
+            e.appendDescription(" User ID"+event.getAuthor().getId());
             if(!event.getMessage().getAttachments().isEmpty()){
                 e.setImage(event.getMessage().getAttachments().get(0).getUrl());
             }

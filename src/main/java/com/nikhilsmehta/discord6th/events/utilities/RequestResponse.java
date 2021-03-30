@@ -14,20 +14,14 @@ public class RequestResponse extends ListenerAdapter {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "respond")) {
-            String name = args[1];
-            String discriminator = args[2];
-            String msg = event.getMessage().getContentDisplay();
-            StringBuilder message= new StringBuilder(msg);
-            message.delete(0, 2);
-            User u = event.getJDA().getUserByTag(name, discriminator);
+            String userID = args[1];
+            User u = event.getJDA().getUserById(userID);
             String sending = event.getMessage().getContentDisplay();
             String updated1 = sending.replace(args[0], "");
             String updated2 = updated1.replace(args[1], "");
-            String updated3 = updated2.replace(args[2], "");
-
 
             u.openPrivateChannel()
-                    .flatMap(channel -> channel.sendMessage(updated3))
+                    .flatMap(channel -> channel.sendMessage(updated2))
                     .queue();
 
             User nikhil = event.getJDA().getUserById("745127340581060619");
