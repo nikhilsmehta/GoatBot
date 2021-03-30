@@ -5,7 +5,7 @@ GoatBot is a discord bot which offers a combination of memes as well as moderati
 * Numerous memes
 * A command that uses an [API](https://meme-api.herokuapp.com/gimme) to get random memes from [r/memes](https://www.reddit.com/r/memes/)
 * A news command to get the most up-to-date news from [NewsAPI](https://newsapi.org/)
-* A modular code design allowing for environmental variables
+* Modular codebase allowing for environmental variables
 
 
 ## Installation and Setup
