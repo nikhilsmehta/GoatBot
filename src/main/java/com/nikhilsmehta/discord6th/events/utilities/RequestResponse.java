@@ -21,7 +21,7 @@ public class RequestResponse extends ListenerAdapter {
             String updated2 = updated1.replace(args[1], "");
 
             u.openPrivateChannel()
-                    .flatMap(channel -> channel.sendMessage(updated2))
+                    .flatMap(channel -> channel.sendMessage("From my developers: "+updated2))
                     .queue();
 
             User nikhil = event.getJDA().getUserById("745127340581060619");
