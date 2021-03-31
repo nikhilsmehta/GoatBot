@@ -55,7 +55,7 @@ public class RandomMemesAPI extends ListenerAdapter {
                 event.getChannel().sendMessage(m.build()).queue();
                 m.clear();
             } catch (Exception e) {
-                event.getChannel().sendMessage("this caught a parse exception");
+                event.getChannel().sendMessage("this caught a parse exception").queue();
                 e.printStackTrace();
             }
 
