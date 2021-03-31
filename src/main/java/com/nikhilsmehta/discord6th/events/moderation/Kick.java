@@ -39,8 +39,7 @@ public class Kick extends ListenerAdapter {
 
             }
             else {
-                MessageBuilder m = new MessageBuilder();
-                m.setContent("You don't have perms for that!");
+                noPermsErrorMessage(event.getChannel(), event.getMember());
             }
         }
     }
@@ -51,6 +50,15 @@ public class Kick extends ListenerAdapter {
         builder.setAuthor(member.getUser().getName(), member.getUser().getAvatarUrl(), member.getUser().getAvatarUrl());
         builder.setColor(TutorialBot.embedColor);
         builder.setDescription("Proper usage: ?kick {@user} [reason]");
+        channel.sendMessage(builder.build()).queue();
+    }
+
+    public void noPermsErrorMessage(TextChannel channel, Member member){
+        EmbedBuilder builder = new EmbedBuilder();
+        builder.setTitle("You don't have permissions to do that!");
+        builder.setAuthor(member.getUser().getName(), member.getUser().getAvatarUrl(), member.getUser().getAvatarUrl());
+        builder.setColor(TutorialBot.embedColor);
+        builder.setDescription("You are not an administrator so you can not mute other members in the server!");
         channel.sendMessage(builder.build()).queue();
     }
 
