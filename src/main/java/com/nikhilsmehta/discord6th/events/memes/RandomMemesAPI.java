@@ -55,7 +55,7 @@ public class RandomMemesAPI extends ListenerAdapter {
                 EmbedBuilder m = new EmbedBuilder();
                 m.setTitle("Meme on r/meme");
                 m.setDescription(url);
-                m.appendDescription("Want to see more? Click here: "+postLink);
+                m.appendDescription(" Want to see more? Click here: "+postLink);
                 m.setColor(TutorialBot.embedColor);
                 event.getChannel().sendTyping().queue();
                 event.getChannel().sendMessage(m.build()).queue();
