@@ -10,7 +10,7 @@ public class Bop extends ListenerAdapter {
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
-        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "simp")) {
+        if (args[0].equalsIgnoreCase(TutorialBot.prefix + "?bop")) {
             MessageBuilder e =new MessageBuilder();
             e.setContent("https://tenor.com/view/da-baby-bop-dance-charlotte-groove-gif-16081053");
 
