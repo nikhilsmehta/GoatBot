@@ -18,7 +18,6 @@ public class Boi extends ListenerAdapter {
             event.getChannel().sendMessage(e.build()).queue();
             e.clear();
 
-
         }
     }
 
