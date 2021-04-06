@@ -16,9 +16,7 @@ public class Kwaza  extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "kwaza")) {
             MessageBuilder e =new MessageBuilder();
-            e.setContent("https://www.youtube.com/watch?v=w6MWa4rZxJY");
-            e.append(" ");
-            e.append("https://cdn.discordapp.com/attachments/779048271653109801/799417115927904310/unknown.png");
+            e.setContent("https://cdn.discordapp.com/attachments/779048271653109801/799417115927904310/unknown.png");
 
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(e.build()).queue();
