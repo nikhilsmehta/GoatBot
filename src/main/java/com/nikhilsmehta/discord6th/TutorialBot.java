@@ -23,7 +23,6 @@ import javax.security.auth.login.LoginException;
 
 
 public class TutorialBot {
-    public static JDABuilder builder;
 
     public static JDA jda;
     public static String prefix = "?";
@@ -34,7 +33,6 @@ public class TutorialBot {
         String token = System.getenv("token");
 
         jda = new JDABuilder(AccountType.BOT).setToken(token).build();
-        int placeholder = jda.getGuilds().size();
         jda.getPresence().setStatus(OnlineStatus.ONLINE);
         jda.getPresence().setActivity(Activity.playing("?help"));
         jda.addEventListener(new Maker());
@@ -79,7 +77,6 @@ public class TutorialBot {
         jda.addEventListener(new yessir());
         jda.addEventListener(new Bop());
         jda.addEventListener(new Math());
-//test merge
     }
 
 }
