@@ -1,6 +1,7 @@
 package com.nikhilsmehta.discord6th;
 
 import com.nikhilsmehta.discord6th.events.memes.*;
+import com.nikhilsmehta.discord6th.events.memes.Math;
 import com.nikhilsmehta.discord6th.events.moderation.*;
 import com.nikhilsmehta.discord6th.events.utilities.*;
 import net.dv8tion.jda.api.AccountType;
@@ -77,6 +78,7 @@ public class TutorialBot {
         jda.addEventListener(new Fax());
         jda.addEventListener(new yessir());
         jda.addEventListener(new Bop());
+        jda.addEventListener(new Math());
 
     }
 
