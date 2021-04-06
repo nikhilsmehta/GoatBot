@@ -79,7 +79,6 @@ public class TutorialBot {
         jda.addEventListener(new yessir());
         jda.addEventListener(new Bop());
         jda.addEventListener(new Math());
-        //test
 
     }
 
