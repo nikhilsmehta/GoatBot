@@ -77,10 +77,10 @@ public class TutorialBot {
         jda.addEventListener(new Bop());
     }
 
-    public static void logger(String msgContent, String jumpURL, String server){
+    public static void logger(String msgContent, String jumpURL, String server, String user){
         TutorialBot bot = new TutorialBot();
         MessageBuilder logger = new MessageBuilder();
-        logger.setContent("("+server+")"+msgContent+", "+jumpURL);
+        logger.setContent("("+server+") "+"From: "+user+" Content: "+msgContent+", "+jumpURL);
         bot.logging.sendMessage(logger.build()).queue();
     }
 

@@ -15,7 +15,7 @@ public class help extends ListenerAdapter {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "help")) {
-            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName(), event.getAuthor().getAsMention());
             EmbedBuilder info = new EmbedBuilder();
             info.setTitle(":newspaper: Commands").setThumbnail("https://i.pinimg.com/originals/7b/3e/ee/7b3eeeafffcbc7669f9dd76404285117.jpg");
 

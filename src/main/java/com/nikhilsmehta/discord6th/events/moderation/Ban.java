@@ -20,7 +20,7 @@ public class Ban extends ListenerAdapter {
         String[] args = event.getMessage().getContentRaw().split("\\s+");
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "ban")) {
-            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName(), event.getAuthor().getAsMention());
             if (event.getMember().hasPermission(Permission.ADMINISTRATOR)) {
 
                 if (args.length <= 1) {
