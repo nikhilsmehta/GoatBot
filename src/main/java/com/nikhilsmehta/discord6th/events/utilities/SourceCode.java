@@ -24,7 +24,7 @@ public class SourceCode extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(info.build()).queue();
             info.clear();
-            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName(), event.getAuthor().getAsMention());
         }
     }
 

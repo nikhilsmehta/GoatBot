@@ -18,7 +18,7 @@ public class SendInvite extends ListenerAdapter {
             event.getChannel().sendMessage(e.build()).queue();
             e.clear();
 
-            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName(), event.getAuthor().getAsMention());
         }
     }
 

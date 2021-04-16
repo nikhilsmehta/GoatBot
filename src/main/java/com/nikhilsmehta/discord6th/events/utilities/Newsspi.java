@@ -49,7 +49,7 @@ public class Newsspi extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(m.build()).queue();
             m.clear();
-            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName(), event.getAuthor().getAsMention());
         }
 
 
@@ -84,7 +84,7 @@ public class Newsspi extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(m.build()).queue();
             m.clear();
-            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName(), event.getAuthor().getAsMention());
 
         }
 
@@ -118,7 +118,7 @@ public class Newsspi extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(m.build()).queue();
             m.clear();
-            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName(), event.getAuthor().getAsMention());
         }
 
     }
