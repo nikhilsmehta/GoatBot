@@ -18,6 +18,7 @@ public class Ping extends ListenerAdapter {
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(e.build()).queue();
             e.clear();
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
 
 
         }

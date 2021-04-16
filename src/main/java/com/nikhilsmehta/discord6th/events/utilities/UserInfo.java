@@ -28,7 +28,7 @@ public class UserInfo extends ListenerAdapter {
 
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "user")) {
-
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
             if (event.getMessage().getMentionedMembers().size()==0){
                 info.setTitle(event.getAuthor().getAsTag()+" Info!");
 

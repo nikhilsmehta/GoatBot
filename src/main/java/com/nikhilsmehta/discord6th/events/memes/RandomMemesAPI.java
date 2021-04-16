@@ -30,7 +30,7 @@ public class RandomMemesAPI extends ListenerAdapter {
         String url = "";
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "meme")) {
-
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
             try {
                 URL memeURL = new URL("https://meme-api.herokuapp.com/gimme");
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(memeURL.openConnection().getInputStream()));

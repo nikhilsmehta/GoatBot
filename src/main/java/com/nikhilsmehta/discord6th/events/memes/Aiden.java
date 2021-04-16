@@ -2,6 +2,7 @@ package com.nikhilsmehta.discord6th.events.memes;
 
 import com.nikhilsmehta.discord6th.TutorialBot;
 import net.dv8tion.jda.api.MessageBuilder;
+import net.dv8tion.jda.api.entities.TextChannel;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -18,7 +19,7 @@ public class Aiden extends ListenerAdapter {
             event.getChannel().sendMessage(e.build()).queue();
             e.clear();
 
-
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
         }
     }
 
