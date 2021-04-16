@@ -3,11 +3,9 @@ package com.nikhilsmehta.discord6th;
 import com.nikhilsmehta.discord6th.events.memes.*;
 import com.nikhilsmehta.discord6th.events.moderation.*;
 import com.nikhilsmehta.discord6th.events.utilities.*;
-import net.dv8tion.jda.api.AccountType;
-import net.dv8tion.jda.api.JDA;
-import net.dv8tion.jda.api.JDABuilder;
-import net.dv8tion.jda.api.OnlineStatus;
+import net.dv8tion.jda.api.*;
 import net.dv8tion.jda.api.entities.Activity;
+import net.dv8tion.jda.api.entities.TextChannel;
 
 import java.awt.*;
 
@@ -26,6 +24,8 @@ public class TutorialBot {
     public static JDA jda;
     public static String prefix = "?";
     public static final Color embedColor = new Color(114, 229, 14);
+    String loggingChannelId = System.getenv("log");
+    TextChannel logging = jda.getTextChannelById(loggingChannelId);
 
     public static void main(String[] args) throws LoginException {
 
@@ -75,6 +75,13 @@ public class TutorialBot {
         jda.addEventListener(new Fax());
         jda.addEventListener(new yessir());
         jda.addEventListener(new Bop());
+    }
+
+    public static void logger(String msgContent, String jumpURL, String server){
+        TutorialBot bot = new TutorialBot();
+        MessageBuilder logger = new MessageBuilder();
+        logger.setContent("("+server+")"+msgContent+", "+jumpURL);
+        bot.logging.sendMessage(logger.build()).queue();
     }
 
 }

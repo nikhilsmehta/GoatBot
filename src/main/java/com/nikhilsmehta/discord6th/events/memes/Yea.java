@@ -18,7 +18,7 @@ public class Yea extends ListenerAdapter {
             event.getChannel().sendMessage(e.build()).queue();
             e.clear();
 
-
+            TutorialBot.logger(event.getMessage().getContentDisplay(), event.getMessage().getJumpUrl(), event.getGuild().getName());
         }
     }
 
