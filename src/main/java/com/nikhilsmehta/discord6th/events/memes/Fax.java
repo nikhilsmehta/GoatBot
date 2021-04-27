@@ -12,7 +12,7 @@ public class Fax extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "fax")) {
             MessageBuilder e =new MessageBuilder();
-            e.setContent("https://media.tenor.co/videos/2ccb87963eada6da56838ea7ab66dc0e/mp4");
+            e.setContent("hhttps://tenor.com/view/vince-staples-fax-it-do-be-facts-tho-its-the-truth-gif-16329641");
 
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(e.build()).queue();
