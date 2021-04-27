@@ -12,7 +12,7 @@ public class Fax extends ListenerAdapter {
 
         if (args[0].equalsIgnoreCase(TutorialBot.prefix + "fax")) {
             MessageBuilder e =new MessageBuilder();
-            e.setContent("https://tenor.com/view/tom-and-jerry-what-insomnia-no-sleep-gif-13337078");
+            e.setContent("https://media.tenor.co/videos/2ccb87963eada6da56838ea7ab66dc0e/mp4");
 
             event.getChannel().sendTyping().queue();
             event.getChannel().sendMessage(e.build()).queue();
