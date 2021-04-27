@@ -75,6 +75,11 @@ public class TutorialBot {
         jda.addEventListener(new Fax());
         jda.addEventListener(new yessir());
         jda.addEventListener(new Bop());
+        jda.addEventListener(new Sike());
+        jda.addEventListener(new Fire());
+        jda.addEventListener(new Milkdud());
+        jda.addEventListener(new Monk());
+        jda.addEventListener(new Virgin());
     }
 
     public static void logger(String msgContent, String jumpURL, String server, String user){
