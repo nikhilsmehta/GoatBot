@@ -56,7 +56,6 @@ public class TutorialBot {
         jda.addEventListener(new UserJoin());
         jda.addEventListener(new RandomMemesAPI());
         jda.addEventListener(new Newsspi());
-        jda.addEventListener(new Howie());
         jda.addEventListener(new Ban());
         jda.addEventListener(new Boi());
         jda.addEventListener(new Kick());
@@ -79,7 +78,6 @@ public class TutorialBot {
         jda.addEventListener(new Fire());
         jda.addEventListener(new Milkdud());
         jda.addEventListener(new Monk());
-        jda.addEventListener(new Virgin());
     }
 
     public static void logger(String msgContent, String jumpURL, String server, String user){
