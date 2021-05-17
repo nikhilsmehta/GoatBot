@@ -78,6 +78,7 @@ public class TutorialBot {
         jda.addEventListener(new Fire());
         jda.addEventListener(new Milkdud());
         jda.addEventListener(new Monk());
+        jda.addEventListener(new Vote());
     }
 
     public static void logger(String msgContent, String jumpURL, String server, String user){
