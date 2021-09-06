@@ -2,6 +2,7 @@ package com.nikhilsmehta.discord6th;
 
 import com.nikhilsmehta.discord6th.events.memes.*;
 import com.nikhilsmehta.discord6th.events.moderation.*;
+import com.nikhilsmehta.discord6th.events.tictactoe.game.TicTacToeListener;
 import com.nikhilsmehta.discord6th.events.utilities.*;
 import net.dv8tion.jda.api.*;
 import net.dv8tion.jda.api.entities.Activity;
@@ -79,6 +80,7 @@ public class TutorialBot {
         jda.addEventListener(new Milkdud());
         jda.addEventListener(new Monk());
         jda.addEventListener(new Vote());
+        jda.addEventListener(new TicTacToeListener());
     }
 
     public static void logger(String msgContent, String jumpURL, String server, String user){
