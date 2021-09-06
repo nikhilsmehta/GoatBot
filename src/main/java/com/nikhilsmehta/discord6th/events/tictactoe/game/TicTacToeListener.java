@@ -1,5 +1,6 @@
 package com.nikhilsmehta.discord6th.events.tictactoe.game;
 
+import com.nikhilsmehta.discord6th.TutorialBot;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.MessageChannel;
@@ -129,6 +130,7 @@ public class TicTacToeListener extends ListenerAdapter{
 		eb.addField("Player one:", boardHandler.getPlayerOne().getEffectiveName(), true);
 		eb.addField("Player two:", boardHandler.getPlayerTwo().getEffectiveName(), true);
 		eb.addField("Board", boardHandler.getBoardAsString(), false);
+		eb.setColor(TutorialBot.embedColor);
 		channel.sendMessage(eb.build()).queue();
 	}
 }
