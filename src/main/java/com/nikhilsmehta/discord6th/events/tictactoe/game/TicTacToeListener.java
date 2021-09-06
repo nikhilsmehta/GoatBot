@@ -72,7 +72,7 @@ public class TicTacToeListener extends ListenerAdapter{
 				if(aiMode == true && !member.getUser().isBot() && !boardHandler.isBoardFull()) {
 					Move move = MiniMaxAI.findBestMove(boardHandler.getBoardCopy());
 					System.out.println("The best calculated move is "+move.col+" ,"+move.row);
-					channel.sendMessage("AI moved to "+(move.col+1)+" "+(3-move.row)).queue();
+					channel.sendMessage("?play "+(move.col+1)+" "+(3-move.row)).queue();
 				}
 			} catch(NumberFormatException e) {
 				channel.sendMessage("Please put your moves in the format: !play x y, where x and y are the coordinates of your move.").queue();
